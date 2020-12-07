@@ -1,0 +1,20 @@
+{
+  "name": "cypress-api-test-agxp",
+  "version": "1.0.0",
+  "description": "Projeto para apresentação de testes utilizando de API utilizando cypress para  AGPX 2020",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "./node_modules/.bin/cypress open",
+    "cypress:run": "./node_modules/.bin/cypress run"
+  },
+  "author": "Maximiliano Alves da Cruz",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^6.0.1",
+    "joi": "^17.3.0",
+    "mocha": "^8.2.1",
+    "mochawesome": "^6.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}

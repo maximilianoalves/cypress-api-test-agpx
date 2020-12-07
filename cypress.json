@@ -1,0 +1,12 @@
+{
+    "baseUrl": "https://serverest.dev/",
+    "video": false,
+    "testFiles": "**/*.spec*",
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir": "mochawesome-report/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+    }
+}
