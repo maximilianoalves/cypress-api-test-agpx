@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-12-09T20:33:19.599Z",
+    "end": "2020-12-09T20:33:19.811Z",
+    "duration": 212,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c8d512eb-5966-4435-9f06-906c54816675",
+      "title": "",
+      "fullFile": "cypress/integration/services/produtos/tests/postProdutos.spec.js",
+      "file": "cypress/integration/services/produtos/tests/postProdutos.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b436b44d-baf0-41d9-a803-4d1ee4a68975",
+          "title": "Post Produtos",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Adicionar um produto",
+              "fullTitle": "Post Produtos Adicionar um produto",
+              "timedOut": null,
+              "duration": 196,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "PostLogin.autenticacao().should(function (response) {\n  expect(response.status).to.eq(200);\n  PostProdutos.adicionar(response.body.authorization).should(function (resProduto) {\n    expect(resProduto.status).to.eq(201);\n    expect(resProduto.body.message).to.eq('Cadastro realizado com sucesso');\n    DeleteProdutos.apagar(resProduto.body._id, response.body.authorization).should(function (resDelete) {\n      expect(resDelete.status).to.eq(200);\n      expect(resDelete.body.message).to.eq('Registro excluído com sucesso');\n    });\n  });\n});",
+              "err": {},
+              "uuid": "6ce12ced-0cbc-448f-a9e8-78eeabc8e79d",
+              "parentUUID": "b436b44d-baf0-41d9-a803-4d1ee4a68975",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6ce12ced-0cbc-448f-a9e8-78eeabc8e79d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 196,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

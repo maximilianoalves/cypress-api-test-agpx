@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-12-09T20:33:18.286Z",
+    "end": "2020-12-09T20:33:18.431Z",
+    "duration": 145,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "be1527f2-dcdf-427e-a907-7cc04b557c4c",
+      "title": "",
+      "fullFile": "cypress/integration/services/produtos/tests/getProdutos.spec.js",
+      "file": "cypress/integration/services/produtos/tests/getProdutos.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8c389ec6-19fc-4a3f-aef9-b77fae7f3316",
+          "title": "Get Produtos",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Listar os produtos cadastrados",
+              "fullTitle": "Get Produtos Listar os produtos cadastrados",
+              "timedOut": null,
+              "duration": 74,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "GetProdutos.listar().should(function (response) {\n  expect(response.status).to.eq(200);\n  expect(response.body).to.be.not[\"null\"];\n});",
+              "err": {},
+              "uuid": "6de122e5-4eaa-40c8-ae64-904dac8881e8",
+              "parentUUID": "8c389ec6-19fc-4a3f-aef9-b77fae7f3316",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar o contrato da listagem de produtos",
+              "fullTitle": "Get Produtos Validar o contrato da listagem de produtos",
+              "timedOut": null,
+              "duration": 54,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "GetProdutos.listar().should(function (response) {\n  return _produtos[\"default\"].validateAsync(response.body);\n});",
+              "err": {},
+              "uuid": "ad5d6a46-525a-44b4-b795-cbbd158d8146",
+              "parentUUID": "8c389ec6-19fc-4a3f-aef9-b77fae7f3316",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6de122e5-4eaa-40c8-ae64-904dac8881e8",
+            "ad5d6a46-525a-44b4-b795-cbbd158d8146"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 128,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

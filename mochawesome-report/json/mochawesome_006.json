@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-12-09T20:33:24.484Z",
+    "end": "2020-12-09T20:33:24.624Z",
+    "duration": 140,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a1ccb85c-19d4-4960-83b6-e0ad18f421ff",
+      "title": "",
+      "fullFile": "cypress/integration/services/usuarios/tests/getUsuarios.spec.js",
+      "file": "cypress/integration/services/usuarios/tests/getUsuarios.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cd8ac7fe-50d2-4e8e-ab2a-3f60a4dd25aa",
+          "title": "Get Usuario",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Listar os usiários cadastrados",
+              "fullTitle": "Get Usuario Listar os usiários cadastrados",
+              "timedOut": null,
+              "duration": 70,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "GetUsuarios.listar().should(function (response) {\n  expect(response.status).to.eq(200);\n  expect(response.body).to.be.not[\"null\"];\n});",
+              "err": {},
+              "uuid": "c39318ab-c36e-42bf-87ca-9d0f05cc4c47",
+              "parentUUID": "cd8ac7fe-50d2-4e8e-ab2a-3f60a4dd25aa",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar o contrato da listagem de usuarios",
+              "fullTitle": "Get Usuario Validar o contrato da listagem de usuarios",
+              "timedOut": null,
+              "duration": 55,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "GetUsuarios.listar().should(function (response) {\n  return _usuarios[\"default\"].validateAsync(response.body);\n});",
+              "err": {},
+              "uuid": "82295bca-1fee-47a9-b647-166ae15430de",
+              "parentUUID": "cd8ac7fe-50d2-4e8e-ab2a-3f60a4dd25aa",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c39318ab-c36e-42bf-87ca-9d0f05cc4c47",
+            "82295bca-1fee-47a9-b647-166ae15430de"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 125,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-12-09T20:33:25.903Z",
+    "end": "2020-12-09T20:33:26.050Z",
+    "duration": 147,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "86298304-a304-4f9e-a8ab-12b978a09d35",
+      "title": "",
+      "fullFile": "cypress/integration/services/usuarios/tests/postUsuarios.spec.js",
+      "file": "cypress/integration/services/usuarios/tests/postUsuarios.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "52eea9c9-4c4c-4419-a6ad-a21045701940",
+          "title": "Post Usuario",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Adicionar um novo usuário",
+              "fullTitle": "Post Usuario Adicionar um novo usuário",
+              "timedOut": null,
+              "duration": 130,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "PostUsuarios.adicionar().should(function (resNovoUsuario) {\n  expect(resNovoUsuario.status).to.eq(201);\n  expect(resNovoUsuario.body.message).to.eq('Cadastro realizado com sucesso');\n  DeleteUsuarios.apagar(resNovoUsuario.body._id).should(function (resApagarUsuario) {\n    expect(resApagarUsuario.status).to.eq(200);\n    expect(resApagarUsuario.body.message).to.eq('Registro excluído com sucesso');\n  });\n});",
+              "err": {},
+              "uuid": "39f8b406-de20-47aa-8559-12178b4237d3",
+              "parentUUID": "52eea9c9-4c4c-4419-a6ad-a21045701940",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "39f8b406-de20-47aa-8559-12178b4237d3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 130,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
