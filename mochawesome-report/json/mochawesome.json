@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2020-12-09T20:33:15.286Z",
-    "end": "2020-12-09T20:33:15.553Z",
-    "duration": 267,
+    "start": "2020-12-16T00:10:02.212Z",
+    "end": "2020-12-16T00:10:02.475Z",
+    "duration": 263,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "7aa532f8-ea3e-4d21-86af-e0e172bacf41",
+      "uuid": "ce71f7fb-21a7-4711-8e35-dbfdd67c0ea0",
       "title": "",
       "fullFile": "cypress/integration/services/login/tests/postLogin.spec.js",
       "file": "cypress/integration/services/login/tests/postLogin.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "7649fdcc-52fc-48c6-a498-4d90a403d26e",
+          "uuid": "6930135a-a668-4d1b-9a57-774f2fff47eb",
           "title": "Post Login",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Fazer o login",
               "fullTitle": "Post Login Fazer o login",
               "timedOut": null,
-              "duration": 250,
+              "duration": 242,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "PostLogin.autenticacao().should(function (response) {\n  expect(response.status).to.eq(200);\n  expect(response.body).to.be.not[\"null\"];\n});",
               "err": {},
-              "uuid": "a0c02905-36c8-4433-8cfb-1fa2d0f0e057",
-              "parentUUID": "7649fdcc-52fc-48c6-a498-4d90a403d26e",
+              "uuid": "7cc164f7-f1fb-4418-8def-7523475728f8",
+              "parentUUID": "6930135a-a668-4d1b-9a57-774f2fff47eb",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a0c02905-36c8-4433-8cfb-1fa2d0f0e057"
+            "7cc164f7-f1fb-4418-8def-7523475728f8"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 250,
+          "duration": 242,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2020-12-09T20:33:18.286Z",
-    "end": "2020-12-09T20:33:18.431Z",
-    "duration": 145,
+    "start": "2020-12-16T00:10:05.418Z",
+    "end": "2020-12-16T00:10:05.562Z",
+    "duration": 144,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "be1527f2-dcdf-427e-a907-7cc04b557c4c",
+      "uuid": "c2a1b0a0-0c6a-4815-9ae0-00efb88f4e63",
       "title": "",
       "fullFile": "cypress/integration/services/produtos/tests/getProdutos.spec.js",
       "file": "cypress/integration/services/produtos/tests/getProdutos.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "8c389ec6-19fc-4a3f-aef9-b77fae7f3316",
+          "uuid": "60e390e0-e89d-4624-98b8-f6766e0859a7",
           "title": "Get Produtos",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Listar os produtos cadastrados",
               "fullTitle": "Get Produtos Listar os produtos cadastrados",
               "timedOut": null,
-              "duration": 74,
+              "duration": 72,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "GetProdutos.listar().should(function (response) {\n  expect(response.status).to.eq(200);\n  expect(response.body).to.be.not[\"null\"];\n});",
               "err": {},
-              "uuid": "6de122e5-4eaa-40c8-ae64-904dac8881e8",
-              "parentUUID": "8c389ec6-19fc-4a3f-aef9-b77fae7f3316",
+              "uuid": "20cb2329-2f23-4a26-bee7-cbea7d479757",
+              "parentUUID": "60e390e0-e89d-4624-98b8-f6766e0859a7",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Validar o contrato da listagem de produtos",
               "fullTitle": "Get Produtos Validar o contrato da listagem de produtos",
               "timedOut": null,
-              "duration": 54,
+              "duration": 58,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "GetProdutos.listar().should(function (response) {\n  return _produtos[\"default\"].validateAsync(response.body);\n});",
               "err": {},
-              "uuid": "ad5d6a46-525a-44b4-b795-cbbd158d8146",
-              "parentUUID": "8c389ec6-19fc-4a3f-aef9-b77fae7f3316",
+              "uuid": "b104f6f5-c8f2-4059-9a7b-3a604ebf1bf5",
+              "parentUUID": "60e390e0-e89d-4624-98b8-f6766e0859a7",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "6de122e5-4eaa-40c8-ae64-904dac8881e8",
-            "ad5d6a46-525a-44b4-b795-cbbd158d8146"
+            "20cb2329-2f23-4a26-bee7-cbea7d479757",
+            "b104f6f5-c8f2-4059-9a7b-3a604ebf1bf5"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 128,
+          "duration": 130,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

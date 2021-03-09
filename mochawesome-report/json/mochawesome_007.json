@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2020-12-09T20:33:25.903Z",
-    "end": "2020-12-09T20:33:26.050Z",
-    "duration": 147,
+    "start": "2020-12-16T00:10:13.862Z",
+    "end": "2020-12-16T00:10:14.035Z",
+    "duration": 173,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "86298304-a304-4f9e-a8ab-12b978a09d35",
+      "uuid": "9a3d4b54-d820-4c84-a1de-19490b10873f",
       "title": "",
       "fullFile": "cypress/integration/services/usuarios/tests/postUsuarios.spec.js",
       "file": "cypress/integration/services/usuarios/tests/postUsuarios.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "52eea9c9-4c4c-4419-a6ad-a21045701940",
+          "uuid": "b9a16d51-6dd2-4fc4-a46a-711cc1c8ba98",
           "title": "Post Usuario",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Adicionar um novo usuário",
               "fullTitle": "Post Usuario Adicionar um novo usuário",
               "timedOut": null,
-              "duration": 130,
+              "duration": 157,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "PostUsuarios.adicionar().should(function (resNovoUsuario) {\n  expect(resNovoUsuario.status).to.eq(201);\n  expect(resNovoUsuario.body.message).to.eq('Cadastro realizado com sucesso');\n  DeleteUsuarios.apagar(resNovoUsuario.body._id).should(function (resApagarUsuario) {\n    expect(resApagarUsuario.status).to.eq(200);\n    expect(resApagarUsuario.body.message).to.eq('Registro excluído com sucesso');\n  });\n});",
               "err": {},
-              "uuid": "39f8b406-de20-47aa-8559-12178b4237d3",
-              "parentUUID": "52eea9c9-4c4c-4419-a6ad-a21045701940",
+              "uuid": "97e8b843-4065-43d3-a278-49ca15b74140",
+              "parentUUID": "b9a16d51-6dd2-4fc4-a46a-711cc1c8ba98",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "39f8b406-de20-47aa-8559-12178b4237d3"
+            "97e8b843-4065-43d3-a278-49ca15b74140"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 130,
+          "duration": 157,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

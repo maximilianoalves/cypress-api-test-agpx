@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2020-12-16T00:10:12.235Z",
-    "end": "2020-12-16T00:10:12.385Z",
-    "duration": 150,
+    "start": "2020-12-09T20:33:24.484Z",
+    "end": "2020-12-09T20:33:24.624Z",
+    "duration": 140,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "86d04e04-4cc1-40fb-8f7f-8e47b3b8c652",
+      "uuid": "a1ccb85c-19d4-4960-83b6-e0ad18f421ff",
       "title": "",
       "fullFile": "cypress/integration/services/usuarios/tests/getUsuarios.spec.js",
       "file": "cypress/integration/services/usuarios/tests/getUsuarios.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "59e01886-50d8-4f08-879a-ad5ac9e0a6b6",
+          "uuid": "cd8ac7fe-50d2-4e8e-ab2a-3f60a4dd25aa",
           "title": "Get Usuario",
           "fullFile": "",
           "file": "",
@@ -38,17 +38,17 @@
               "title": "Listar os usiários cadastrados",
               "fullTitle": "Get Usuario Listar os usiários cadastrados",
               "timedOut": null,
-              "duration": 80,
+              "duration": 70,
               "state": "passed",
-              "speed": "slow",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "GetUsuarios.listar().should(function (response) {\n  expect(response.status).to.eq(200);\n  expect(response.body).to.be.not[\"null\"];\n});",
               "err": {},
-              "uuid": "54a0abb0-d095-4461-af92-b50f95e8c25f",
-              "parentUUID": "59e01886-50d8-4f08-879a-ad5ac9e0a6b6",
+              "uuid": "c39318ab-c36e-42bf-87ca-9d0f05cc4c47",
+              "parentUUID": "cd8ac7fe-50d2-4e8e-ab2a-3f60a4dd25aa",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Validar o contrato da listagem de usuarios",
               "fullTitle": "Get Usuario Validar o contrato da listagem de usuarios",
               "timedOut": null,
-              "duration": 53,
+              "duration": 55,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "GetUsuarios.listar().should(function (response) {\n  return _usuarios[\"default\"].validateAsync(response.body);\n});",
               "err": {},
-              "uuid": "caea123e-7472-40b7-ad32-e42b9cfa5789",
-              "parentUUID": "59e01886-50d8-4f08-879a-ad5ac9e0a6b6",
+              "uuid": "82295bca-1fee-47a9-b647-166ae15430de",
+              "parentUUID": "cd8ac7fe-50d2-4e8e-ab2a-3f60a4dd25aa",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "54a0abb0-d095-4461-af92-b50f95e8c25f",
-            "caea123e-7472-40b7-ad32-e42b9cfa5789"
+            "c39318ab-c36e-42bf-87ca-9d0f05cc4c47",
+            "82295bca-1fee-47a9-b647-166ae15430de"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 133,
+          "duration": 125,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
